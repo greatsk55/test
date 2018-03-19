@@ -8,11 +8,16 @@
       
    function webClose() { 
          window.yeogooappstore.result(true, "aaaa"); 
-   } 
+   }
+   function result(){
+         window.webkit.messageHandlers.result.postMessage("");     
+   }
 </script>
       <body>
       wdqd
+            
       <button onclick="result();">종료</button>
+      <button onclick="webClose();">종료</button>
       </body>
 </html>
 
